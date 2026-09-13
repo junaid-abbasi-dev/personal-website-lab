@@ -178,6 +178,9 @@ footer {
         align-items: center;
         padding: 1rem;
     }
+    .skills-container {
+        padding: 1rem;
+    }
     .project-items {
         display: grid;
         grid-template-columns: 1fr;
