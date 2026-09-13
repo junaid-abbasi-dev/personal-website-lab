@@ -1,5 +1,6 @@
 :root {
     --background: #060C1C;
+    --backgroundcards: #0F172A;
     --surface: #0F1930;
     --border: #263653;
     --text-primary: #F8FAFC;
@@ -46,7 +47,9 @@ body {
     gap: 8px;
     padding: 0 0.5rem;
 }
-
+.github-container:hover {
+    background-color: var(--surface);
+}
 /* About me styling */
 
 .coding-logo {
@@ -58,7 +61,7 @@ body {
     padding-bottom: 0.5rem;
 }
 .about-me {
-    background-color:  #0F172A;
+    background-color: var(--backgroundcards);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,4 +98,82 @@ ul li {
     background-color: rgba(34, 211, 238, 0.14);
     border: 1px solid #22D3EE;
     border-radius: 20px;
+}
+.projects-container h2 {
+    padding: 1rem;
+}
+.project-items img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--surface);
+    border-radius: 10px;
+    padding-bottom: 0.5rem;
+}
+.project-items {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: var(--backgroundcards);
+}
+.project-description h3 {
+    font-weight: 700;
+    padding: 0.5rem;
+}
+.project-description p {
+    padding: 0.5rem;
+    line-height: inherit;
+}
+.project-description ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding: 1rem 0;
+}
+.links button {
+    padding: 1rem 2rem;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    font-size: 1rem;
+    color: white;
+}
+.links button:hover {
+    background-color: var(--surface);
+}
+.view-project {
+    background-color: var(--primary);
+}
+.view-github {
+    background-color: var(--background);
+}
+
+footer {
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color:var(--border);
+}
+
+/* responsiveness of the website */
+@media screen and (max-width: 768px) {
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-items {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
