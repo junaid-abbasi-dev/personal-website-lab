@@ -1,0 +1,98 @@
+:root {
+    --background: #060C1C;
+    --surface: #0F1930;
+    --border: #263653;
+    --text-primary: #F8FAFC;
+    --text-secondary: #A7B0C0;
+    --primary: #8B5CF6;
+    --accent: #22D3EE;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: radial-gradient(circle at 50% 0%, #0F1930 0%, transparent 45%),
+    #060C1C;
+    color: white;
+}
+.header {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header h1 {
+    font-weight: 900;
+    padding: 0.5rem;
+}
+.header p {
+    padding: 0.5rem;
+}
+.github-container a {
+    text-decoration: none;
+    padding: 0.5rem;
+    color: white;
+    font-weight: 600;
+}
+.github-container {
+    background-color: var(--primary);
+    border-radius: 1.5rem;
+    border: 2px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 0.5rem;
+}
+
+/* About me styling */
+
+.coding-logo {
+    width: 100%;
+    max-width: 200px;
+    filter: drop-shadow(0 0 30px rgba(139, 92, 246, 0.25));
+}
+.about-me-container h2 {
+    padding-bottom: 0.5rem;
+}
+.about-me {
+    background-color:  #0F172A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+.skills {
+    padding: 1rem;
+}
+.skills h2 {
+    padding-bottom: 0.5rem;
+}
+.skills-container ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+ul li {
+    padding: 1rem;
+}
+#html, #javascript, #github {
+    color: #C4B5FD;
+    background-color: rgba(139, 92, 246, 0.18);
+    border: 1px solid #8B5CF6;
+    border-radius: 20px;
+}
+#css, #git {
+    color: #67E8F9;
+    background-color: rgba(34, 211, 238, 0.14);
+    border: 1px solid #22D3EE;
+    border-radius: 20px;
+}
