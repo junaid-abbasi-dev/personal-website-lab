@@ -63,13 +63,17 @@ body {
 .about-me {
     background-color: var(--backgroundcards);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 1rem;
-    margin: 1rem;
+
     border: 1px solid var(--border);
     border-radius: 20px;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 1rem auto;
+    box-sizing: border-box;
 }
 .skills {
     padding: 1rem;
@@ -166,6 +170,7 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 90%;
     }
     .skills {
         display: flex;
